@@ -25,8 +25,8 @@ export function mountShell(root) {
   const sidebar = el('aside', { class: 'sidebar', id: 'sidebar' },
     el('div', { class: 'brand' },
       el('span', { class: 'brand__mark', 'aria-hidden': 'true' }, 'ES'),
-      el('span', { class: 'brand__name' }, 'EstateSuite',
-        el('span', { class: 'brand__za' }, 'ZA'))),
+      el('span', { class: 'brand__name' }, 'Estate',
+        el('span', { class: 'brand__accent' }, 'Suite'))),
     el('nav', { class: 'nav', id: 'nav', 'aria-label': 'Primary' }));
 
   const scrim = el('div', { class: 'scrim', hidden: true,
@@ -164,7 +164,7 @@ function renderNav(role, active) {
 function renderView(route) {
   const meta = ROUTE_META[route] || { title: route };
   refs.title.textContent = meta.title;
-  document.title = `${meta.title} · EstateSuite ZA`;
+  document.title = `${meta.title} · EstateSuite`;
 
   const renderer = viewFor(route);
   const node = renderer ? renderer({ store }) : stubView(meta);

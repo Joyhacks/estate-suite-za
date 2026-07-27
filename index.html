@@ -1,11 +1,33 @@
 <!doctype html>
-<html lang="en-ZA">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
-  <title>EstateSuite ZA</title>
-  <meta name="description" content="Property management for South African estates, lodges and rental portfolios — demo build." />
+  <title>EstateSuite — rental property management</title>
+  <meta name="description" content="EstateSuite is a property management workspace for rental portfolios. Owners and agents track units, leases, tenants, rent, deposits and payouts in one place." />
+
+  <!-- Favicon: brass mark on dark estate green, with a PNG fallback. -->
+  <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/public/favicon.png" type="image/png" sizes="any" />
+  <link rel="apple-touch-icon" href="/public/favicon.png" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:site_name" content="EstateSuite" />
+  <meta property="og:title" content="EstateSuite — rental property management" />
+  <meta property="og:description" content="A property management workspace for rental portfolios. Owners and agents track units, leases, tenants, rent and payouts in one place." />
+  <meta property="og:url" content="https://estatesuite.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://estatesuite.vercel.app/public/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="EstateSuite — a lease document assembling on the working surface." />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EstateSuite — rental property management" />
+  <meta name="twitter:description" content="A property management workspace for rental portfolios. Owners and agents track units, leases, tenants, rent and payouts in one place." />
+  <meta name="twitter:image" content="https://estatesuite.vercel.app/public/og.png" />
 
   <!-- Fonts: Google Fonts CDN. tokens.css defines a system fallback so the
        app still reads correctly offline. Two families only. -->
@@ -19,7 +41,7 @@
 </head>
 <body>
   <div id="app" class="app-root"></div>
-  <noscript>EstateSuite ZA requires JavaScript (ES modules) to run.</noscript>
+  <noscript>EstateSuite requires JavaScript (ES modules) to run.</noscript>
   <script type="module" src="/src/app.js"></script>
 </body>
 </html>
