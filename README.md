@@ -33,4 +33,4 @@ for the pure functions in `src/domain/` and the locale packs.
 ## Deploy
 
 Static, no framework. The output directory is the repository root (see
-`vercel.json`). Live demo: https://estatesuite.vercel.app
+`vercel.json`). Live demo: https://estatesuite-demo.vercel.app
