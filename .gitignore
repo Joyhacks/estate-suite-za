@@ -1,0 +1,28 @@
+# Secrets / environment — never commit
+.env
+.env.*
+*.key
+*.pem
+*.p12
+
+# Client-specific material must NEVER enter this public repo (see CLAUDE.md).
+# Paid client work happens in a separate private repo.
+/client/
+/clients/
+*.client.*
+*client-data*
+
+# Dependencies (this project has none, but guard anyway)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Vercel
+.vercel
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

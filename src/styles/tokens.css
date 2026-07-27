@@ -1,0 +1,74 @@
+/* Design tokens — the single source of truth for the EstateSuite ZA look.
+   Dark estate-green chrome, cool neutral paper, one brass accent. Two font
+   families only. See CLAUDE.md for the authoritative palette. */
+
+:root {
+  /* Chrome — dark estate green */
+  --chrome:       #15271D;
+  --chrome-2:     #1D3327;
+  --chrome-3:     #24402F;
+  --chrome-line:  #2C4636;
+  --chrome-ink:   #E7ECE5;
+  --chrome-ink-2: #9DB0A2;
+
+  /* Paper — cool neutral working surface (NOT warm cream) */
+  --paper:        #FAF9F6;
+  --paper-inset:  #F1EFE9;
+  --paper-raised: #FFFFFF;
+  --ink:          #1B1B17;
+  --ink-2:        #5A594F;
+  --ink-3:        #86847A;
+  --line:         #E1DED6;
+  --line-strong:  #CFCBC0;
+
+  /* Brass — the one accent, used sparingly */
+  --brass:        #A67C3D;
+  --brass-2:      #916B32;
+  --brass-ink:    #6E5124;
+  --brass-wash:   #F3ECDF;
+
+  /* Status — reserved for state, never decoration */
+  --ok:    #3F7A4B;
+  --ok-wash:  #E6EFE6;
+  --warn:  #A5762A;
+  --warn-wash: #F4EAD4;
+  --over:  #A6432E;   /* rust — overdue / error */
+  --over-wash: #F4E1DB;
+
+  /* Type */
+  --font-ui:  'Instrument Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-doc: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+
+  /* Type scale (compact, density-first) */
+  --fs-xs: 11px;
+  --fs-sm: 12px;
+  --fs-base: 13px;
+  --fs-md: 15px;
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+  --fs-2xl: 30px;
+
+  /* Space */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+
+  /* Geometry */
+  --radius: 2px;
+  --sidebar-w: 236px;
+  --topbar-h: 52px;
+  --hairline: 1px solid var(--line);
+  --focus: 2px solid var(--brass);
+
+  --dur: 160ms;
+  --ease: cubic-bezier(.2, .6, .2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur: 0ms; }
+  * { scroll-behavior: auto !important; }
+}
