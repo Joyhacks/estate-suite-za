@@ -6,7 +6,6 @@
 *.p12
 
 # Client-specific material must NEVER enter this public repo (see CLAUDE.md).
-# Paid client work happens in a separate private repo.
 /client/
 /clients/
 *.client.*
